@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>순열 · 조합 계산기</title>
+    <link rel="stylesheet" href="combinatorics.css">
+</head>
+<body>
+    <div class = "container">
+    <h1>순열 · 조합 계산기</h1>
+    <input type="number" id="n" placeholder="n 값">
+    <input type="number" id="r" placeholder="r 값">
+
+    <button onclick="calculatePermutation()">nPr</button>
+    <button onclick="calculateCombination()()">nCr</button>
+
+    <h2 id="result"></h2>
+
+    <br><br>
+    <button class="back-btn" onclick="location.href='index.html'">일반 계산기</button>
+    </div>
+    
+    <script src="combi.js"></script>
+</body>
+</html>

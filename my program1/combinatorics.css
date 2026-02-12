@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+}
+
+/* 전체 박스 */
+.container {
+  background: white;
+  width: 400px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* 제목 */
+h1 {
+  margin-bottom: 25px;
+  color: #00796b;
+}
+
+/* 입력창 */
+input {
+  width: 45%;
+  padding: 12px;
+  margin: 10px 5px;
+  font-size: 18px;
+  border: 2px solid #b2dfdb;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #00796b;
+  outline: none;
+}
+
+/* 버튼 */
+button {
+  margin: 10px 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #00796b;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #004d40;
+  transform: translateY(-3px);
+}
+
+/* 결과 */
+#result {
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #004d40;
+}
+
+/* 돌아가기 버튼 */
+.back-btn {
+  margin-top: 20px;
+  background: #555;
+}
+
+.back-btn:hover {
+  background: #333;
+}

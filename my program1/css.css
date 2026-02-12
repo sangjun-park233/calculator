@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4a6cff, #8fa8ff);
+}
+
+/* 계산기 전체 박스 */
+.calculator {
+  background: #1e1e2f;
+  padding: 25px;
+  border-radius: 15px;
+  width: 320px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* 화면 */
+#display {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #2e2e42;
+  color: white;
+}
+
+/* 버튼 영역 */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* 기본 버튼 */
+button {
+  height: 60px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #3a3a55;
+  color: white;
+  transition: 0.2s;
+}
+
+/* 마우스 올렸을 때 */
+button:hover {
+  background: #57577a;
+  transform: scale(1.05);
+}
+
+/* 연산자 버튼 강조 */
+button:nth-child(4n) {
+  background: #ff8c42;
+}
+
+button:nth-child(4n):hover {
+  background: #ff6f1a;
+}
+
+/* = 버튼 강조 (15번째 위치일 경우) */
+button:nth-child(16) {
+  background: #4caf50;
+}
+
+button:nth-child(16):hover {
+  background: #3e8e41;
+}
+.wide-btn {
+  width: 100%;
+  grid-column: span 2; /* grid 쓰는 경우 */
+}
